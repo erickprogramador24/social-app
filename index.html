@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SocialApp - Conecta con el mundo</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="app-container">
+        <!-- Sidebar/Navigation -->
+        <nav class="sidebar">
+            <div class="logo">
+                <span class="material-icons">flutter_dash</span>
+                <h1>SocialApp</h1>
+            </div>
+            
+            <ul class="nav-links">
+                <li class="active">
+                    <span class="material-icons">home</span>
+                    <span>Inicio</span>
+                </li>
+                <li>
+                    <span class="material-icons">search</span>
+                    <span>Explorar</span>
+                </li>
+                <li>
+                    <span class="material-icons">notifications</span>
+                    <span>Notificaciones</span>
+                </li>
+                <li>
+                    <span class="material-icons">mail</span>
+                    <span>Mensajes</span>
+                </li>
+                <li>
+                    <span class="material-icons">bookmark</span>
+                    <span>Guardados</span>
+                </li>
+                <li>
+                    <span class="material-icons">person</span>
+                    <span>Perfil</span>
+                </li>
+                <li class="more-options">
+                    <span class="material-icons">more_horiz</span>
+                    <span>Más opciones</span>
+                    <div class="dropdown-menu">
+                        <a href="#"><span class="material-icons">list_alt</span> Listas</a>
+                        <a href="#"><span class="material-icons">topic</span> Temas</a>
+                        <a href="#"><span class="material-icons">stars</span> Favoritos</a>
+                        <a href="#"><span class="material-icons">help</span> Ayuda</a>
+                        <a href="#"><span class="material-icons">settings</span> Configuración</a>
+                    </div>
+                </li>
+            </ul>
+            
+            <button class="post-button">Publicar</button>
+            
+            <div class="user-profile">
+                <img src="" alt="Profile" class="profile-pic" id="sidebar-profile-pic">
+                <div class="user-info">
+                    <span class="username" id="sidebar-username">Usuario</span>
+                    <span class="user-handle" id="sidebar-userhandle">@usuario</span>
+                </div>
+                <span class="material-icons">more_horiz</span>
+                <div class="dropdown-menu user-menu">
+                    <a href="#"><span class="material-icons">person</span> Perfil</a>
+                    <a href="#"><span class="material-icons">logout</span> Cerrar sesión</a>
+                </div>
+            </div>
+            
+            <button class="theme-toggle" id="theme-toggle">
+                <span class="material-icons">brightness_4</span>
+                <span>Cambiar tema</span>
+            </button>
+        </nav>
+        
+        <!-- Main Content -->
+        <main class="main-content">
+            <header class="main-header">
+                <h2>Inicio</h2>
+                <span class="material-icons">auto_awesome</span>
+            </header>
+            
+            <div class="create-post">
+                <img src="" alt="Profile" class="profile-pic" id="main-profile-pic">
+                <div class="post-input">
+                    <textarea placeholder="¿Qué está pasando?" id="post-textarea"></textarea>
+                    <div class="post-actions">
+                        <div class="action-icons">
+                            <span class="material-icons">image</span>
+                            <span class="material-icons">gif_box</span>
+                            <span class="material-icons">poll</span>
+                            <span class="material-icons">mood</span>
+                            <span class="material-icons">schedule</span>
+                        </div>
+                        <button class="post-button-small" id="submit-post">Publicar</button>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="posts-container" id="posts-container">
+                <!-- Posts will be loaded here via JavaScript -->
+            </div>
+        </main>
+        
+        <!-- Right Sidebar -->
+        <aside class="right-sidebar">
+            <div class="search-bar">
+                <span class="material-icons">search</span>
+                <input type="text" placeholder="Buscar en SocialApp">
+            </div>
+            
+            <div class="trending-section">
+                <h3>Que está pasando</h3>
+                <div class="trending-item">
+                    <span class="category">Tecnología · Tendencias</span>
+                    <h4>#NuevoLenguaje</h4>
+                    <span class="count">15.2K posts</span>
+                </div>
+                <div class="trending-item">
+                    <span class="category">Deportes · En vivo</span>
+                    <h4>Final del torneo</h4>
+                    <span class="count">45.2K posts</span>
+                </div>
+                <div class="trending-item">
+                    <span class="category">Entretenimiento</span>
+                    <h4>Estreno mundial</h4>
+                    <span class="count">32.1K posts</span>
+                </div>
+                <a href="#" class="show-more">Mostrar más</a>
+            </div>
+            
+            <div class="who-to-follow">
+                <h3>A quién seguir</h3>
+                <div class="user-suggestion">
+                    <img src="" alt="Profile" class="profile-pic suggestion-pic">
+                    <div class="user-info">
+                        <span class="username">Tech Expert</span>
+                        <span class="user-handle">@techexpert</span>
+                    </div>
+                    <button class="follow-button">Seguir</button>
+                </div>
+                <div class="user-suggestion">
+                    <img src="" alt="Profile" class="profile-pic suggestion-pic">
+                    <div class="user-info">
+                        <span class="username">Design Guru</span>
+                        <span class="user-handle">@designmaster</span>
+                    </div>
+                    <button class="follow-button">Seguir</button>
+                </div>
+                <div class="user-suggestion">
+                    <img src="" alt="Profile" class="profile-pic suggestion-pic">
+                    <div class="user-info">
+                        <span class="username">Travel Enthusiast</span>
+                        <span class="user-handle">@traveltheworld</span>
+                    </div>
+                    <button class="follow-button">Seguir</button>
+                </div>
+                <a href="#" class="show-more">Mostrar más</a>
+            </div>
+            
+            <footer class="app-footer">
+                <p>DESARROLLADO POR ERICK PROGRAMADOR</p>
+            </footer>
+        </aside>
+        
+        <!-- Mobile Bottom Navigation -->
+        <nav class="mobile-nav">
+            <span class="material-icons">home</span>
+            <span class="material-icons">search</span>
+            <span class="material-icons">notifications</span>
+            <span class="material-icons">mail</span>
+        </nav>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
